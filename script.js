@@ -51,6 +51,21 @@ document.addEventListener("DOMContentLoaded", function() {
   inputs[0].focus();
 });
 
+document.addEventListener("visibilitychange", function() {
+  if (!document.hidden) {  // If the page is visible
+    inputs[0].focus();
+    inputs[0].select();
+  }
+});
+
+document.body.addEventListener("click", function(event) {
+  // If not clicking on a focusable element
+  if (!event.target.matches('a, button, input, select, textarea')) {
+    inputs[0].focus();
+    inputs[0].select();
+  }
+});
+
 function isValidURL(url) {
   const pattern = /^https:\/\/assets\.laliga\.com\/squad\/\d+\/t\d+\/(p|man)\d+\/\d+x\d+\/(p|man)\d+_t\d+_\d+_\d+_\d+_\d+\.png$/
   return pattern.test(url);
