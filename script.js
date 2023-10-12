@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function isValidURL(url) {
-  const pattern = /^https:\/\/assets\.laliga\.com\/squad\/\d+\/t\d+\/p\d+\/\d+x\d+\/p\d+_t\d+_\d+_\d+_\d+_\d+\.png$/;
+  const pattern = /^https:\/\/assets\.laliga\.com\/squad\/\d+\/t\d+\/(p|man)\d+\/\d+x\d+\/(p|man)\d+_t\d+_\d+_\d+_\d+_\d+\.png$/
   return pattern.test(url);
 }
 
