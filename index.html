@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Modifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>La Liga Person Assets URL Fixer</h1>
+  <p>Paste a assets.laliga.com URL like <a
+      href="https://assets.laliga.com/squad/2023/t186/p219292/256x278/p219292_t186_2023_1_001_000.png"
+      target="_blank">this</a> here, and it will automatically convert it to its high-resolution version.
+  </p>
+  <label class="checkbox-label">
+    <input type="checkbox" id="autoCopy" checked>
+    <span>Automatically copy output to clipboard?</span>
+  </label>
+  <input type="text" id="inputURL" placeholder="Paste your URL here..." autofocus>
+  <div id="outputContainer">
+    <input type="text" id="outputURL" readonly placeholder="Modified URL will appear here...">
+    <button id="openImage" title="Open image in new tab">🔗</button>
+  </div>
+
+
+  <small>Created by FIFER Mods</small>
+  <script src="script.js"></script>
+</body>
+
+</html>
